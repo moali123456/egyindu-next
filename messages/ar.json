@@ -1,0 +1,22 @@
+{
+  "homePage": {
+    "welcome_message": "مرحبًا بكم في موقعنا!!!!!",
+    "intro_text": "اكتشف محتوى مذهل وتواصل مع الآخرين."
+  },
+  "usersPage": {
+    "welcome_message": "مرحبًا بكم في صفحة المستخدمين!!!",
+    "user_list_intro": "إليك قائمة بمستخدمينا الكرام."
+  },
+  "loginPage": {
+    "dont_have_account": "ليس لديك حساب؟"
+  },
+  "forgotPassPage": {
+    "": ""
+  },
+  "resetPassPage": {
+    "Didnt_receive_code": "لم يصلك الرمز؟",
+    "sent_text": "لقد أرسلنا رمزًا مكونًا من 6 أرقام إلى بريدك الإلكتروني"
+  },
+  "logout": "تسجيل الخروج",
+  "": ""
+}

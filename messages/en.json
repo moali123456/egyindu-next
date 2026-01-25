@@ -1,0 +1,21 @@
+{
+  "homePage": {
+    "welcome_message": "Welcome to our website!!!!!",
+    "intro_text": "Discover amazing content and connect with others."
+  },
+  "usersPage": {
+    "welcome_message": "Welcome to the Users Page!!!",
+    "user_list_intro": "Here is a list of our valued users."
+  },
+  "loginPage": {
+    "dont_have_account": "Don't have an account?"
+  },
+  "forgotPassPage": {
+    "": ""
+  },
+  "resetPassPage": {
+    "Didnt_receive_code": "Didn't receive the code?",
+    "sent_text": "We've sent a 6-digit code to your mail"
+  },
+  "logout": "Logout"
+}
