@@ -4,6 +4,7 @@ import { useLocale } from "next-intl";
 import { setLocale } from "@/lib/actions";
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { Button } from "../ui/button";
 
 interface ChangeLangProps {
   styles?: string;
@@ -32,7 +33,7 @@ export default function ChangeLang({ styles }: ChangeLangProps) {
     // >
     //   {isPending ? "Changing..." : locale === "en" ? "العربية" : "English"}
     // </button>
-    <button
+    <Button
       onClick={handleChangeLanguage}
       disabled={isPending}
       //className={`disabled:opacity-50 disabled:cursor-not-allowed transition-colors ${styles}`}
@@ -43,6 +44,6 @@ export default function ChangeLang({ styles }: ChangeLangProps) {
       `}
     >
       {isPending ? "Changing..." : locale === "en" ? "العربية" : "English"}
-    </button>
+    </Button>
   );
 }

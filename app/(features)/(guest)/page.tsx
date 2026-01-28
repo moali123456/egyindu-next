@@ -6,7 +6,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useTranslations } from "next-intl";
-import ChangeLang from "@/components/shared/changeLang";
 import { ModeToggle } from "@/components/shared/ToggleTheme";
 
 export default function Home() {
@@ -21,8 +20,6 @@ export default function Home() {
       <Button className="bg-red-600 hover:bg-red-300 dark:bg-gray-800 blue:bg-gray-500">
         Click me
       </Button>
-
-      
 
       {/* Toggle theme */}
       <ModeToggle />

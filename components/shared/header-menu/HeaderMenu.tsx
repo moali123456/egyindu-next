@@ -22,6 +22,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import ChangeLang from "@/components/shared/changeLang";
+import Image from "next/image";
 
 const navigation = {
   categories: [
@@ -204,6 +205,11 @@ export default function HeaderMenu() {
                     <div className="grid grid-cols-2 gap-x-4">
                       {category.featured.map((item) => (
                         <div key={item.name} className="group relative text-sm">
+                          {/* <Image
+                            alt={item.imageAlt}
+                            src={item.imageSrc}
+                            className="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75"
+                          /> */}
                           <img
                             alt={item.imageAlt}
                             src={item.imageSrc}
@@ -311,7 +317,7 @@ export default function HeaderMenu() {
         </p> */}
         <div className="h-10 bg-[#1b1d19] px-6">
           {/* Change Language */}
-          <ChangeLang styles="h-full cursor-pointer text-[#ff3c1c]" />
+          <ChangeLang styles="h-full cursor-pointer text-[#ff3c1c] bg-transparent hover:bg-transparent p-0" />
         </div>
 
         <nav
@@ -331,7 +337,7 @@ export default function HeaderMenu() {
               </button>
 
               {/* Logo */}
-              <div className="ml-4 flex lg:ml-0">
+              {/* <div className="ml-4 flex lg:ml-0">
                 <a href="#">
                   <span className="sr-only">Your Company</span>
                   <img
@@ -340,7 +346,7 @@ export default function HeaderMenu() {
                     className="h-8 w-auto"
                   />
                 </a>
-              </div>
+              </div> */}
 
               {/* Flyout menus */}
               <PopoverGroup className="hidden lg:ml-8 lg:block lg:self-stretch">
@@ -374,11 +380,17 @@ export default function HeaderMenu() {
                                     key={item.name}
                                     className="group relative text-base sm:text-sm"
                                   >
-                                    <img
+                                    <Image
+                                      fill
+                                      alt={item.imageAlt}
+                                      src={item.imageSrc}
+                                      className="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75 h-auto"
+                                    />
+                                    {/* <img
                                       alt={item.imageAlt}
                                       src={item.imageSrc}
                                       className="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75"
-                                    />
+                                    /> */}
                                     <a
                                       href={item.href}
                                       className="mt-6 block font-medium text-gray-900"
@@ -458,7 +470,7 @@ export default function HeaderMenu() {
                   </a>
                 </div>
 
-                <div className="hidden lg:ml-8 lg:flex">
+                {/* <div className="hidden lg:ml-8 lg:flex">
                   <a
                     href="#"
                     className="flex items-center text-gray-700 hover:text-gray-800"
@@ -471,10 +483,10 @@ export default function HeaderMenu() {
                     <span className="ml-3 block text-sm font-medium">CAD</span>
                     <span className="sr-only">, change currency</span>
                   </a>
-                </div>
+                </div> */}
 
                 {/* Search */}
-                <div className="flex lg:ml-6">
+                {/* <div className="flex lg:ml-6">
                   <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Search</span>
                     <MagnifyingGlassIcon
@@ -482,10 +494,10 @@ export default function HeaderMenu() {
                       className="size-6"
                     />
                   </a>
-                </div>
+                </div> */}
 
                 {/* Cart */}
-                <div className="ml-4 flow-root lg:ml-6">
+                {/* <div className="ml-4 flow-root lg:ml-6">
                   <a href="#" className="group -m-2 flex items-center p-2">
                     <ShoppingBagIcon
                       aria-hidden="true"
@@ -496,7 +508,7 @@ export default function HeaderMenu() {
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
